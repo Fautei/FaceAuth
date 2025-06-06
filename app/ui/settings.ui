@@ -22,7 +22,7 @@
   <property name="modal">
    <bool>true</bool>
   </property>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -130,7 +130,7 @@
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>130</x>
@@ -150,7 +150,7 @@
       </property>
       <property name="icon">
        <iconset>
-        <normaloff>icons8-сохранить-50.png</normaloff>icons8-сохранить-50.png</iconset>
+        <normaloff>icons/save.png</normaloff>icons/save.png</iconset>
       </property>
       <property name="iconSize">
        <size>
@@ -167,7 +167,7 @@
       </property>
       <property name="icon">
        <iconset>
-        <normaloff>icons8-back-64.png</normaloff>icons8-back-64.png</iconset>
+        <normaloff>icons/back.png</normaloff>icons/back.png</iconset>
       </property>
       <property name="iconSize">
        <size>
@@ -179,7 +179,7 @@
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>372</x>
@@ -211,7 +211,7 @@
       </property>
       <property name="icon">
        <iconset>
-        <normaloff>icons8-delete-64.png</normaloff>icons8-delete-64.png</iconset>
+        <normaloff>icons/del.png</normaloff>icons/del.png</iconset>
       </property>
       <property name="iconSize">
        <size>
@@ -228,7 +228,7 @@
       </property>
       <property name="icon">
        <iconset>
-        <normaloff>icons8-создать-новый-50.png</normaloff>icons8-создать-новый-50.png</iconset>
+        <normaloff>icons/create.png</normaloff>icons/create.png</iconset>
       </property>
       <property name="iconSize">
        <size>

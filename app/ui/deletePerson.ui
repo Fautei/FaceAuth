@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -35,7 +35,7 @@
         </property>
         <property name="icon">
          <iconset>
-          <normaloff>icons8-delete-64.png</normaloff>icons8-delete-64.png</iconset>
+          <normaloff>icons/del.png</normaloff>icons/del.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -52,7 +52,7 @@
         </property>
         <property name="icon">
          <iconset>
-          <normaloff>icons8-back-64.png</normaloff>icons8-back-64.png</iconset>
+          <normaloff>icons/back.png</normaloff>icons/back.png</iconset>
         </property>
         <property name="iconSize">
          <size>

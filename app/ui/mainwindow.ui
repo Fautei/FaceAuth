@@ -86,7 +86,7 @@
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>126472.png</normaloff>126472.png</iconset>
+      <normaloff>icons/gear.png</normaloff>icons/gear.png</iconset>
     </property>
     <property name="iconSize">
      <size>
