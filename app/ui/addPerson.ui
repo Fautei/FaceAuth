@@ -27,7 +27,7 @@
    </property>
    <property name="icon">
     <iconset>
-     <normaloff>icons8-создать-новый-50.png</normaloff>icons8-создать-новый-50.png</iconset>
+     <normaloff>icons/create.png</normaloff>icons/create.png</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -50,7 +50,7 @@
    </property>
    <property name="icon">
     <iconset>
-     <normaloff>icons8-photo-frame-60.png</normaloff>icons8-photo-frame-60.png</iconset>
+     <normaloff>icons/photo.png</normaloff>icons/photo.png</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -73,7 +73,7 @@
    </property>
    <property name="icon">
     <iconset>
-     <normaloff>icons8-back-64.png</normaloff>icons8-back-64.png</iconset>
+     <normaloff>icons/back.png</normaloff>icons/back.png</iconset>
    </property>
    <property name="iconSize">
     <size>

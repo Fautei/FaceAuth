@@ -1,0 +1,6 @@
+{
+    "recognition_threshold": 0.8,
+    "working_mode": "multiple",
+    "wait_time": 10,
+    "open_time": 10.0
+}

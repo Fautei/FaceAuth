@@ -71,7 +71,7 @@ class Renderer():
     def render(self, image, faces):
         if faces is not None:
             self.render_boxes(image, faces)
-        for n,m in zip(range(len(self.message_queue)),self.message_queue):
+        for n,m in enumerate(self.message_queue):
             self.render_message(image,n,m)
 
     def render_message(self,image, number,message:Message):
@@ -87,15 +87,25 @@ class Renderer():
         txt_y = int((mes_height+txt_h*txt_scale)/2)
         txt_x = int((w - txt_w*txt_scale)/2)
         cv2.putText(painting_rect,message.text, (txt_x, txt_y), font,txt_scale, font_color, 2)
-        image[number*mes_height:(number+1)*mes_height,:,:] = image[number*mes_height:(number+1)*mes_height,:,:] * (1-message.transparency) + painting_rect*message.transparency  
+        if (number+1)*mes_height < image.shape[0]:
+            image[number*mes_height:(number+1)*mes_height,:,:] = image[number*mes_height:(number+1)*mes_height,:,:] * (1-message.transparency) + painting_rect*message.transparency  
 
-    def render_boxes(self,image,faces, color = (170,170,170)):
-        for x,y,w,h in faces:
+    def render_boxes(self, image, faces, color=(170,170,170)):
+        if faces is None:
+            return
+        for box in faces:
+            x1, y1, x2, y2 = box
+            w = x2 - x1
+            h = y2 - y1
             scale_x = self.width / self.cwidth
             scale_y = self.height / self.cheight
-            x = int(x*scale_x); y = int(y*scale_y); w = int(w*scale_x); h =int(h*scale_y)
-            
-            cv2.rectangle(image,(x,y),(w,h),color,2)
+
+            x1 = int(x1 * scale_x)
+            y1 = int(y1 * scale_y)
+            x2 = int(x2 * scale_x)
+            y2 = int(y2 * scale_y)
+
+            cv2.rectangle(image, (x1, y1), (x2, y2), color, 2)
 
 
     
